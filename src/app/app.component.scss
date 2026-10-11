@@ -1,0 +1,196 @@
+/* Contenedor principal estilo aplicación móvil */
+.card-container {
+  max-width: 450px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* Cabecera Backus */
+.header {
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Banners de estado de conexión */
+.estado {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.conectado {
+  background-color: #e6f4ea;
+  color: #1e8e3e;
+  border: 1px solid #ceead6;
+}
+
+.desconectado {
+  background-color: #fce8e6;
+  color: #d93025;
+  border: 1px solid #fad2cf;
+}
+
+/* Secciones de contenido */
+.seccion {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #eef0f2;
+}
+
+.titulo-seccion {
+  display: block;
+  font-weight: 600;
+  color: #1976d2;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Lista de productos del catálogo */
+.lista-catalogo {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.lista-catalogo li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.lista-catalogo li:last-child {
+  border-bottom: none;
+}
+
+.lista-catalogo .precio {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* Formularios (Inputs y Selects) */
+.selector-producto label {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+select,
+.input-texto {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+select:focus,
+.input-texto:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+}
+
+/* Botones */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1976d2;
+  color: white;
+  box-shadow: 0 4px 6px rgba(25, 118, 210, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #424242;
+}
+
+.btn-secondary:hover {
+  background-color: #bdbdbd;
+}
+
+/* Detalles específicos de la vista Offline */
+.offline-info .txt-sub {
+  margin: 0;
+  color: #666;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.offline-info .highlight {
+  font-weight: bold;
+  color: #f57c00;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.min-catalogo {
+  max-height: 150px;
+  /* Un poco más pequeño en modo offline */
+}
+
+/* Notificación de guardado offline */
+.notificacion-offline {
+  background-color: #fff8e1;
+  border-left: 5px solid #ffb300;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.notificacion-offline p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.notificacion-offline .estado-tag strong {
+  color: #e65100;
+  text-transform: uppercase;
+}
